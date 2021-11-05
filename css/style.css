@@ -4,273 +4,137 @@ html{
 }
 
 body{
-  background-color: #737373;
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
+  background-color: rgb(238, 235, 235);
+  color: #000000
+ 
+}
+main{
+  text-align: center;
 }
 
 h1{
-  font-size: 50px;
-  line-height: 1;
-  padding: 50px 0;
+  font-size: 30px;
   text-align: center;
 }
-
 h2{
-  font-size: 32px;
-  line-height: 1.5;
+  font-size: 30px;
 }
-
-nav ul{
-  list-style-type: none;
-}
-
-nav li{
-  display: inline;
-  padding-right: 20px;
-}
-
-nav{
-  background-color: #ddd;
-  padding: 25px 0;    
-  text-align: left;   
-}
-
-header p{
-  color: white;
-  font-size: 24px;
-  padding: 0 100px;
-  text-align: center;
-}
-
-footer{
-  background-color: black;
-  color: white;
-  padding-top: 30px;
-  text-align: center;
-}
-
-
-
-
-/*****  End Starter Code ****/
-
-nav a{
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  /* Requirement 1 code here*/
-}
-
-  /* Requirement 2 code here*/
-a:hover{
-  text-decoration: underline;
-}
-
-
 .skip a{
   background: white;
-  left: 0;
-  padding: 6px;
+  left: 20%;
+  padding: 8px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-  
-
-  
-
-  /* Requirement 3a code here*/
   position: absolute;
   top: -40px;
 }
 
-/* Requirement 3b code here*/
 .skip a:focus{
   top:0;
 }
 
-/* Requirement 4 code here*/
 *:focus{
-  border: solid 2px;
+  border: solid 2px white;
 }
 
+.footer img{
+  height: 15px;
+  width:15px;
+}
 
-.container{
+footer{
+  background-color: rgb(134, 207, 230);
+  color: black;
+  text-align: center;
+}
+
+.grid-footer{
+  background-color: rgb(134, 207, 230);
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+nav{
+  background-color: rgb(134, 207, 230);   
+  padding: 10px;
+  text-align: right;   
+}
+nav ul{
+  list-style-type: none;
+}
+nav a{
+  color: #000000;
+  text-decoration: none;
+}
+.nav .current{
+  background-color: #c3b2eb;
+  text-decoration: underline;
+  font-weight: bolder;
+
+}
+p, h1, h2 {
+  padding: 10px;
+}
+
+nav li{
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.photos{
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: repeat(5, auto);
-  row-gap: 15px;
-  object-fit: cover;
-  /* Requirement 5 code here*/
-
+  grid-template-rows: auto auto auto;
+  grid-template-columns: minmax(0, 1fr)minmax(0, 1fr)minmax(0, 1fr);
+  height: 95%;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 15px;
 }
 
-/* Remainder of requirements here: */
-
-header{
-  background-image: url("../images/header.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Parallax effect */
-  background-position: center; /* Parallax effect */
-  background-size: cover; /* Parallax effect */
-  color: white;
-  height: 400px; /* Parallax effect */
- 
-
-
-  /* YOUR CODE HERE; */
-  grid-column: 1/-1;
-  grid-row: 1/span 1;
+.photos div{
+  background-color: #c3b2eb;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.in-photos img{
+  width: 80%;
+  height: auto;
+}
+#page-container{
+  position: relative;
+min-height: 100vh;}
 
-
-.about-image{
-  grid-column: 1/-1;
-  max-height: 700px;
-  grid-row: 2/span 1;
-  overflow: hidden;
-  
+#content-wrap{
+  padding-bottom: 2.5rem;
+}
+#footer{
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 2.5rem;
 }
 
-.about{
-  grid-column: 2/ span 1;
-  grid-row: 2/span 1;
-
- 
+#GC-logo{
+  height: 160px;
+  width: auto;
 }
 
-.method-image{
-  grid-column: 1/-1;
-  max-height: 700px;
-  grid-row: 3/span 1;
-  overflow: hidden;
- 
+#resume{
+  height: 250px;
+  width: auto;
 }
 
-.method{
-  grid-column: 2/ span 1;
-  grid-row: 3/span 1;
-  
-}
-.clients-image{
-  grid-column: 1/-1;
-  max-height: 700px;
-  grid-row: 4/span 1;
-  overflow: hidden;
-}
-.clients{
-  grid-column: 2/ span 1;
-  grid-row: 4/span 1;
-
-}
-.contact-image{
-  grid-column: 1/-1;
-  max-height: 700px;
-  grid-row: 5/span 1;
-  overflow: hidden;
-}
-.contact{
-  grid-column: 2/ span 1;
-  grid-row: 5/span 1;
+#LI{
+  height: 250px;
+  width: auto;
+  align-items: center;
 }
 
 
-/* You need to write some of your own selectors here */
 
-
-
-.text-block{
-  background-color: rgba(255, 255, 255, .8);
-  border: 10px solid black;
-  padding: 30px;
-  align-self: center;
-
-
-  /* Your code here */
-
-}
-
-@media screen and (min-width: 800px){
-  nav{
-    padding: 30px 0;
-
-    /* Your code here */
-    text-align: right;
-  }
-
-  .container{
-    display: grid;
-    grid-template-columns: 50px auto 500px auto 50px;
-    grid-template-rows: repeat(5, 400px);
-    object-fit: cover;
-    row-gap:15px;
-
-   
-  }
-
-  
-
-  .about-image{
-    grid-column: 2/span 2;
-  
-  }
-
-  .about{
-    grid-column: 3/span 2;
-  }
-
-  .method-image{
-    grid-column: 3/span 2;
-  }
-
-  .method{
-    grid-column: 2/span 2;
-   
-  }
-
-  .clients-image{
-    grid-column: 2/span 2;
-    
-  }
-
-  .clients{
-    grid-column: 3/span 2;
-    
-  }
-
-  .contact-image{
-    grid-column: 3/span 2;
-    
-  }
-
-  .contact{
-    grid-column: 2/span 2;
-    
-  }
-
-}
-
-
-/** Code for prefers reduced motion **/
-/* Make no changes below this line.
-   *************************************** 
-   */
-@media screen and (prefers-reduced-motion: reduce){
-  /*Turn off scroll*/
-  html{
-      scroll-behavior: auto; /* Removes scroll animation */
-  }
-
-  /*Turn off transition*/
-  .skip a{
-    -webkit-transition: initial; /* sets to default setting */
-    transition: initial; /* sets to default setting */
-  }
-
-  /*Turn off parallax*/
-  header{
-    background-attachment: initial;
-  }
-}
