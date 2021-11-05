@@ -82,8 +82,8 @@ nav li{
 
 .photos{
   display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   grid-template-rows: auto auto auto;
-  grid-template-columns: minmax(0, 1fr)minmax(0, 1fr)minmax(0, 1fr);
   height: 95%;
   width: 95%;
   margin: auto;
@@ -92,10 +92,10 @@ nav li{
 
 .photos div{
   background-color: #c3b2eb;
-  padding: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1em;
 }
 
 .in-photos img{
