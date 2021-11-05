@@ -5,7 +5,8 @@ html{
 
 body{
   background-color: rgb(238, 235, 235);
-  color: #000000
+  color: #000000;
+  font-family: 'Nunito', sans-serif;
  
 }
 main{
@@ -49,13 +50,8 @@ footer{
   text-align: center;
 }
 
-.grid-footer{
-  background-color: rgb(134, 207, 230);
-  color: black;
-  text-align: center;
-  padding-top: 10px;
 
-}
+
 
 nav{
   background-color: rgb(134, 207, 230);   
@@ -103,7 +99,7 @@ nav li{
 }
 
 .in-photos img{
-  width: 80%;
+  width: 90%;
   height: auto;
 }
 #page-container{
